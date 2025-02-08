@@ -5,6 +5,7 @@ import {
   getContacts,
   updateContact,
 } from './operations';
+import { logout } from '../auth/operations';
 
 const INITIAL_STATE = {
   items: null,
@@ -72,7 +73,8 @@ export const contactsSlice = createSlice({
       .addCase(updateContact.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
-      }),
+      })
+      .addCase(logout.fulfilled, () => INITIAL_STATE),
 });
 
 export const contactsReducer = contactsSlice.reducer;
