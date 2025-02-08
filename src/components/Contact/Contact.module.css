@@ -1,0 +1,45 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.infoWrap {
+  display: flex;
+}
+
+.ico {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+}
+.number {
+  color: #05eb78;
+}
+.name {
+  color: #ff00e0;
+}
+
+.btn {
+  border-radius: 8px;
+  border: 2px solid #ff00e0;
+  padding: 10px 10px;
+  width: 80px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.5s linear;
+
+  &:hover {
+    border-color: var(--primary-color);
+  }
+}

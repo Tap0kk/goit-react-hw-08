@@ -1,0 +1,32 @@
+.no_matches {
+  text-align: center;
+  color: var(--second-color);
+  font-size: 18px;
+}
+
+.contact_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contact_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 250px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+
+  color: #bebebe;
+
+  transition: all 250ms linear;
+
+  &:hover {
+    transform: scale(1.05);
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 8px 4px rgba(222, 46, 195, 1);
+  }
+}

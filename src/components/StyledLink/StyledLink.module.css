@@ -1,0 +1,17 @@
+.outline_link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 24px;
+  font-size: 18px;
+  background-color: transparent;
+  color: var(--primary-color);
+  transition: all 250ms linear;
+}
+
+.outline_link_active {
+  background-color: #242424;
+  color: var(--background-color);
+  font-weight: 500;
+  transition: all 250ms linear;
+}
